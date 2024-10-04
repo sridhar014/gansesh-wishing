@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganesh invitation</title>
+    
+</body>
+</html>
+<script>
+const card = document.createElement("div");
+card.style.width = "300px";
+card.style.height = "300px";
+card.style.background = "linear-gradient(#ffcc00, #ffc107)";
+card.style.padding = "20px";
+card.style.borderRadius = "10px";
+card.style.boxShadow = "0 0 10px rgba(0, 0, 0, 0.1)";
+
+// Add the Ganesha image
+const ganeshaImg = document.createElement("img");
+ganeshaImg.src = "ganesha.jpg";
+ganeshaImg.style.width = "150px";
+ganeshaImg.style.height = "150px";
+ganeshaImg.style.margin = "20px auto";
+card.appendChild(ganeshaImg);
+
+// Add the invitation message
+const message = document.createElement("p");
+message.textContent = "You are cordially invited to celebrate Ganesh Chaturthi with us!";
+message.style.fontSize = "18px";
+message.style.color = "#333";
+card.appendChild(message);
+
+// Add the details
+const details = document.createElement("p");
+details.textContent = "Date: 3rd September 2024\nTime: 5:00 pm\nLocation:Kphb Colony";
+details.style.fontSize = "16px";
+details.style.color = "#666";
+card.appendChild(details);
+
+// Add the RSVP button
+const rsvpBtn = document.createElement("button");
+rsvpBtn.textContent = "Welcome";
+rsvpBtn.style.background = "#4CAF50";
+rsvpBtn.style.color = "green";
+rsvpBtn.style.padding = "10px 20px";
+rsvpBtn.style.borderRadius = "5px";
+rsvpBtn.style.cursor = "pointer";
+card.appendChild(rsvpBtn);
+
+document.body.appendChild(card);
+</script>
+</head>
+<body>
